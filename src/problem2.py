@@ -2,9 +2,9 @@
 Final exam, problem 2.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.  May 2018.
+         their colleagues and Adi Sethupathy.  May 2018.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import time
 import testing_helper
@@ -19,7 +19,7 @@ def main():
     print()
     print('Un-comment the calls in MAIN one by one')
     print(' to run the testing code as you complete the TODOs.')
-    # run_test_problem2a()
+    run_test_problem2a()
     # run_test_problem2b()
     # run_test_problem2c()
 
@@ -170,9 +170,16 @@ def problem2a(x, sequence):
       :type sequence:  [int]
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # done: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    new = []
+
+    for k in range(len(sequence)):
+        if sequence[k] > x:
+            new += [sequence[k]]
+
+    return new
 
 
 def run_test_problem2b():
